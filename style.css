@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'cordel';
+    src: url('fonte/xilosa_.ttf'); format:('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Montserrat', sans-serif;
+    --fonte3: 'cordel', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    font-family: var(--fonte1);
+    min-height: 100vh;
+    
+}
+
+header {
+    font-family: var(--fonte3);
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+header > h1 {
+    text-decoration: none;
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+}
+
+pre {
+    font-family: var(--fonte2);
+    font-size: 2.5vw;
+    white-space: pre-line;
+    padding-left: 10vh;
+    line-height: 2em;
+    
+}
+
+section.normal {
+    background-color: #fff;
+    color: #000;
+}
+
+section.imagem {
+    background-color: darkgray;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > pre > p {
+    display: inline-block;
+    color: #fff;
+    background-color: rgba(99, 99, 99, 0.459);
+    text-align: left;
+    text-shadow: 1px 1px 0px black
+
+}
+
+section#img01 {
+    background-image: url('imagens/flor.jpg');
+    background-position: center center;
+    
+
+}
+
+section#img02 {
+    background-image: url('imagens/escrever.jpg');
+    background-position: center center;
+
+}
